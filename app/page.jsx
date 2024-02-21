@@ -1,7 +1,21 @@
-import React from "react";
+"use client";
+
+// as this page is server side rendering to make use client side funcationlity 
+// we have to --->  'use client' <----
+import React, { useEffect } from "react";
 
 const HomePage = () => {
-  return <div>page</div>;
+  useEffect(() => {
+    window.alert("welcome to my site");
+  }, []);
+
+  return (
+    <div>
+      <h1>Indie Gamer</h1>
+      <p>Only the best indie games, reviewed</p>
+      <p>select user_id, name,mail from users where mail</p>
+    </div>
+  );
 };
 
 export default HomePage;
