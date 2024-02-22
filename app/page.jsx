@@ -2,6 +2,8 @@
 
 // as this page is server side rendering to make use client side funcationlity 
 // we have to --->  'use client' <----
+
+//  as this is by default server componenet
 import React, { useEffect } from "react";
 
 const HomePage = () => {
