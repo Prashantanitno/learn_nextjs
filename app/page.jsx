@@ -1,6 +1,6 @@
 "use client";
 
-// as this page is server side rendering to make use client side funcationlity 
+// as this page is server side rendering to make use client side funcationlity
 // we have to --->  'use client' <----
 
 //  as this is by default server componenet
@@ -8,7 +8,8 @@ import React, { useEffect } from "react";
 
 const HomePage = () => {
   useEffect(() => {
-    window.alert("welcome to my site");
+    // window.alert("welcome to my site");
+    console.log("hello Home page ");
   }, []);
 
   return (
